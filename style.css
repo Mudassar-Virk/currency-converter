@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #4534fe;
+  background: url('https://img.freepik.com/premium-vector/money-transfer-background_115579-655.jpg?w=996') center/cover no-repeat;
+  text-decoration: none;
+}
+
+
+nav {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #09bc0f;
+  color:  #fff;
+  width: 100%;
+  height: 60px;
+  padding: 10px 30px;
+}
+
+nav .center ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .center ul li {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+nav .center ul li a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+nav .center ul li a:hover {
+  color: #4534fe;
+
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #675AFE;
+}
+
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+.select-box img {
+  max-width: 21px;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+form button {
+  height: 52px;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #09bc0f;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #4534fe;
+}
+
+form .drop-list .select-box:hover {
+  border-color: #4534fe;
+  border-width: 2px;
+}
+
+footer {
+  background-color: #09bc0f;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  height: 20px;
+  bottom: 0;
+  width: 100%;
+}
